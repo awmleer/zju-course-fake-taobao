@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+
+$text-active-color: #F40;
+$link-inactive-color: #666;
+
+input{
+  border:none;
+  outline: none;
+}
+
+
+a{
+  color: $link-inactive-color;
+  text-decoration: none;
+}
+a:hover{
+  color: $text-active-color;
+}
+
+body{
+  color: #3c3c3c;
+}
+
+
+.text-highlight{
+  color: $text-active-color;
+}
+
+.text-small{
+  font-size: 12px;
+}
