@@ -1,7 +1,6 @@
 @import "bulma";
 
-$text-active-color: #F40;
-$link-inactive-color: #666;
+@import "variables";
 
 input{
   border:none;

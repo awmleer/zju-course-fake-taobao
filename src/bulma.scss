@@ -1,6 +1,7 @@
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 @import "../node_modules/bulma/sass/utilities/functions";
 
-$section-padding: 3rem 8rem;
+$section-padding: 0 1.5rem;
+$gap : 96px;
 
 @import "../node_modules/bulma/bulma";
