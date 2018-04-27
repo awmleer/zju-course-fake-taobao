@@ -2,3 +2,20 @@ div.container{
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+//div.left{
+//  float: left;
+//}
+
+a{
+  margin-right: 8px;
+}
+
+div.right{
+  float: right;
+}
+div.right:after{
+  content: "";
+  display: block;
+  clear: both;
+}
