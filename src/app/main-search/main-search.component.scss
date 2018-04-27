@@ -81,10 +81,18 @@ div.search{
     }
   }
   div.suggestions{
+    position: relative;
+    top: 10px;
+    line-height: 1;
     a{
       //line-height: 18px;
       font-weight: 400;
       margin-right: 0.7em;
+      vertical-align: top;
+    }
+    a.more{
+      position: absolute;
+      right: 0;
     }
   }
 }
