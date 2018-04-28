@@ -1,1 +1,21 @@
+div.category-board{
+  width: 190px;
+  border: 1px solid #ff5000;
+  border-top: none;
+  background-color: #FFFFFF;
+  ul{
+    li{
+      height: 32px;
+      line-height: 32px;
+      padding: 0 20px 0 20px;
+      i.fa.fa-angle-right{
+        color: #666;
+        float: right;
+        height: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
 

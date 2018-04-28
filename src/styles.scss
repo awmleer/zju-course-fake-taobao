@@ -27,8 +27,8 @@ a:hover{
 
 body{
   color: #3c3c3c;
+  font-size: 14px;
 }
-
 
 .text-highlight{
   color: $text-active-color;
@@ -37,4 +37,6 @@ body{
 .text-small{
   font-size: 12px;
 }
-
+.text-large{
+  font-size: 16px;
+}

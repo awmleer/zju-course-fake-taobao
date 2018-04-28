@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="columns">
+    <div class="column is-narrow">
+      <div class="category-board">
+        <ul>
+          <li *ngFor="let categoryCollection of categoryCollections">
+            <ng-container *ngFor="let category of categoryCollection; index as index">
+              <span *ngIf="index>0">/</span>
+              <a>{{category}}</a>
+            </ng-container>
+            <i class="fa fa-angle-right"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="column">
+      <div class="box">
+        <p class="title is-5">Flexible column</p>
+        <p class="subtitle">This column will take up the remaining space available.</p>
+      </div>
+    </div>
+  </div>
+</div>
