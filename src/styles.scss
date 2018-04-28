@@ -40,3 +40,46 @@ body{
 .text-large{
   font-size: 16px;
 }
+
+
+ngu-carousel{
+  position: relative;
+  div.ngucarousel, div.ngucarousel-inner, div.ngucarousel-items, ngu-item{
+    width: 100%;
+    height: 100%;
+  }
+  div.ngucarouselPointDefault{
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    ul.ngucarouselPoint{
+      background-color: rgba(255,255,255,.3);
+      padding: 5px 5px!important;
+      font-size: 0;
+      border-radius: 100px;
+      li{
+        height: 8px!important;
+        width: 8px!important;
+        border-radius: 4px!important;
+        background: #FFFFFF!important;
+      }
+      li.active{
+        transform: none!important;
+        background: #ff5000!important;
+      }
+    }
+  }
+  button.rs{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+  }
+  button.left-rs{
+    left: 10px;
+  }
+  button.right-rs{
+    right: 10px;
+  }
+}

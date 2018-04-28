@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { MainSearchComponent } from './main-search/main-search.component';
 import { ContentComponent } from './content/content.component';
 import { SitesBarComponent } from './sites-bar/sites-bar.component';
-
+import { NguCarouselModule } from '@ngu/carousel';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { SitesBarComponent } from './sites-bar/sites-bar.component';
     SitesBarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NguCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
