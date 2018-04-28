@@ -14,25 +14,29 @@
       </div>
     </div>
     <div class="column is-narrow">
-      <div>
-        <ngu-carousel [inputs]="carouselOne" style="width: 300px;height: 200px;">
-          <ngu-item NguCarouselItem style="background: #222">
-            ....
-          </ngu-item>
-          <ngu-item NguCarouselItem style="background: #222">
-            ....
-          </ngu-item>
-          <ngu-item NguCarouselItem style="background: #222">
-            ....
-          </ngu-item>
-          <button NguCarouselPrev class="rs left-rs button is-light">
-            <i class="fa fa-angle-left"></i>
-          </button>
-          <button NguCarouselNext class="rs right-rs button is-light">
-            <i class="fa fa-angle-right"></i>
-          </button>
-        </ngu-carousel>
-      </div>
+      <ngu-carousel id="carousel-promotions" [inputs]="carouselOne">
+        <ngu-item NguCarouselItem style="background: #222">
+          <img src="assets/img/promotion-1.webp">
+        </ngu-item>
+        <ngu-item NguCarouselItem style="background: #222">
+          <img src="assets/img/promotion-2.webp">
+        </ngu-item>
+        <ngu-item NguCarouselItem style="background: #222">
+          <img src="assets/img/promotion-3.jpg">
+        </ngu-item>
+        <ngu-item NguCarouselItem style="background: #222">
+          <img src="assets/img/promotion-4.jpg">
+        </ngu-item>
+        <ngu-item NguCarouselItem style="background: #222">
+          <img src="assets/img/promotion-5.jpg">
+        </ngu-item>
+        <button NguCarouselPrev class="rs left-rs button is-light">
+          <i class="fa fa-angle-left"></i>
+        </button>
+        <button NguCarouselNext class="rs right-rs button is-light">
+          <i class="fa fa-angle-right"></i>
+        </button>
+      </ngu-carousel>
     </div>
   </div>
 </div>
