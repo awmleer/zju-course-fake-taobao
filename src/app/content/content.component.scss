@@ -1,3 +1,4 @@
+@import "../../variables";
 $gap-width: 10px;
 
 div.category-board{
@@ -90,6 +91,30 @@ div#ad-1, div#ad-2{
     button{
       width: 80px;
       margin-right: 5px;
+    }
+  }
+  #billboard{
+    padding: 0 10px;
+    div.categories{
+      display: flex;
+      margin: 10px 0;
+      div.category{
+        flex: auto;
+        text-align: center;
+        span{
+          padding: 0 5px;
+          display: inline-block;
+          border-bottom: solid 2px #FFFFFF;
+        }
+      }
+      div.category.active span{
+        border-bottom-color: $text-active-color;
+        font-weight: bold;
+      }
+    }
+    a.billboard-item{
+      margin: 5px 8px;
+      display: inline-block;
     }
   }
 }
