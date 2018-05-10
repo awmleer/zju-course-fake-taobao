@@ -8,6 +8,7 @@ import { MainSearchComponent } from './main-search/main-search.component';
 import { ContentComponent } from './content/content.component';
 import { SitesBarComponent } from './sites-bar/sites-bar.component';
 import { NguCarouselModule } from '@ngu/carousel';
+import { UserPanelComponent } from './user-panel/user-panel.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NguCarouselModule } from '@ngu/carousel';
     HeaderComponent,
     MainSearchComponent,
     ContentComponent,
-    SitesBarComponent
+    SitesBarComponent,
+    UserPanelComponent
   ],
   imports: [
     BrowserModule,
