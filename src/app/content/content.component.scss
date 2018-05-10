@@ -20,7 +20,7 @@ div.category-board{
   }
 }
 
-#carousel-promotions{
+#carousel-promotions, #carousel-tmall{
   width: 520px;
   height: 280px;
   margin: $gap-width;
@@ -34,11 +34,11 @@ div.category-board{
 }
 
 
-div#ad-1{
+div#ad-1, div#ad-2{
   margin: $gap-width;
   margin-left: 0;
   img{
     width: 160px;
-    height: 280px;
+    //height: 280px;
   }
 }
