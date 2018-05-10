@@ -83,3 +83,17 @@ ngu-carousel{
     right: 10px;
   }
 }
+
+
+button.button-tb{
+  background-image: linear-gradient(to right,#ff5000 0,#ff6f06 100%);
+  border: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 3px 8px;
+  height: auto;
+}
+button.button-tb:hover{
+  color: #FFFFFF;
+}
+

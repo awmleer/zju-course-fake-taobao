@@ -1,58 +1,97 @@
 <div class="container">
+
   <div class="columns is-gapless">
+
     <div class="column is-narrow">
-      <div class="category-board">
-        <ul>
-          <li *ngFor="let categoryCollection of categoryCollections">
-            <ng-container *ngFor="let category of categoryCollection; index as index">
-              <span *ngIf="index>0">/</span>
-              <a>{{category}}</a>
-            </ng-container>
-            <i class="fa fa-angle-right"></i>
-          </li>
-        </ul>
+
+      <div class="columns is-gapless">
+        <div class="column is-narrow">
+          <div class="category-board">
+            <ul>
+              <li *ngFor="let categoryCollection of categoryCollections">
+                <ng-container *ngFor="let category of categoryCollection; index as index">
+                  <span *ngIf="index>0">/</span>
+                  <a>{{category}}</a>
+                </ng-container>
+                <i class="fa fa-angle-right"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column is-narrow">
+          <div class="columns is-gapless" style="margin: 0;">
+            <div class="column is-narrow">
+              <ngu-carousel id="carousel-promotions" [inputs]="carouselOne">
+                <ngu-item NguCarouselItem style="background: #222">
+                  <img src="assets/img/promotion-1.jpg">
+                </ngu-item>
+                <ngu-item NguCarouselItem style="background: #222">
+                  <img src="assets/img/promotion-2.png">
+                </ngu-item>
+                <ngu-item NguCarouselItem style="background: #222">
+                  <img src="assets/img/promotion-3.jpg">
+                </ngu-item>
+                <ngu-item NguCarouselItem style="background: #222">
+                  <img src="assets/img/promotion-4.jpg">
+                </ngu-item>
+                <ngu-item NguCarouselItem style="background: #222">
+                  <img src="assets/img/promotion-5.jpg">
+                </ngu-item>
+                <button NguCarouselPrev class="rs left-rs button is-light">
+                  <i class="fa fa-angle-left"></i>
+                </button>
+                <button NguCarouselNext class="rs right-rs button is-light">
+                  <i class="fa fa-angle-right"></i>
+                </button>
+              </ngu-carousel>
+            </div>
+            <div class="column is-narrow" id="ad-1">
+              <img src="assets/img/ad-1.jpg">
+            </div>
+          </div>
+          <div class="columns is-gapless" style="margin: 0;">
+            <div class="column is-narrow">
+              <div id="carousel-tmall">另一个轮播图</div>
+            </div>
+            <div class="column is-narrow">
+              <p class="text-small">今日热卖</p>
+              <img src="assets/img/ad-2.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-gapless">
+        123
+      </div>
+
+    </div>
+
+    <div class="column">
+      <div id="user-panel">
+        <img class="user-avatar" src="assets/img/avatar.png">
+        <p class="has-text-centered text-small">Hi！你好</p>
+        <p style="text-align: center">
+          <a class="tjb text-highlight">
+            <span class="icon" style="background-position: 0 -572.5px;height: 16px;width: 16px;"></span>
+            领淘金币抵钱
+          </a>
+          <a class="tjb text-highlight">
+            <span class="icon" style="background-position: 0 -572.5px;height: 16px;width: 16px;"></span>
+            会员俱乐部
+          </a>
+        </p>
+        <div id="login-buttons">
+          <button class="button button-tb">登录</button>
+          <button class="button button-tb">注册</button>
+          <button class="button button-tb">开店</button>
+        </div>
+        <a class="text-highlight has-text-centered text-small" style="background: #ffe4dd;display: block;padding: 3px;margin: 10px 0;">
+          网上有害信息举报专区 <i class="fa fa-caret-right"></i>
+        </a>
       </div>
     </div>
-    <div class="column is-narrow">
-      <div class="columns is-gapless" style="margin: 0;">
-        <div class="column is-narrow">
-          <ngu-carousel id="carousel-promotions" [inputs]="carouselOne">
-            <ngu-item NguCarouselItem style="background: #222">
-              <img src="assets/img/promotion-1.jpg">
-            </ngu-item>
-            <ngu-item NguCarouselItem style="background: #222">
-              <img src="assets/img/promotion-2.png">
-            </ngu-item>
-            <ngu-item NguCarouselItem style="background: #222">
-              <img src="assets/img/promotion-3.jpg">
-            </ngu-item>
-            <ngu-item NguCarouselItem style="background: #222">
-              <img src="assets/img/promotion-4.jpg">
-            </ngu-item>
-            <ngu-item NguCarouselItem style="background: #222">
-              <img src="assets/img/promotion-5.jpg">
-            </ngu-item>
-            <button NguCarouselPrev class="rs left-rs button is-light">
-              <i class="fa fa-angle-left"></i>
-            </button>
-            <button NguCarouselNext class="rs right-rs button is-light">
-              <i class="fa fa-angle-right"></i>
-            </button>
-          </ngu-carousel>
-        </div>
-        <div class="column is-narrow" id="ad-1">
-          <img src="assets/img/ad-1.jpg">
-        </div>
-      </div>
-      <div class="columns is-gapless" style="margin: 0;">
-        <div class="column is-narrow">
-          <div id="carousel-tmall">另一个轮播图</div>
-        </div>
-        <div class="column is-narrow">
-          <p class="text-small">今日热卖</p>
-          <img src="assets/img/ad-2.jpg">
-        </div>
-      </div>
-    </div>
+
   </div>
+
 </div>
