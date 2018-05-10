@@ -7,6 +7,7 @@ div.category-board{
   border-top: none;
   background-color: #FFFFFF;
   ul{
+    padding: 5px 0;
     li{
       height: 32px;
       line-height: 32px;
@@ -69,6 +70,36 @@ div#ad-1, div#ad-2{
       display: inline-block;
       height: 155px;
       margin: 21px 1px;
+    }
+  }
+}
+
+#tbtt{
+  height: 109px;
+  padding: 14px 14px 12px 20px;
+  background-color: #FFFFFF;
+  margin-right: 10px;
+  display: flex;
+  div.left{
+    flex: none;
+    width: 180px;
+    padding-top: 18px;
+    img{
+      height: 26px;
+    }
+  }
+  div.right{
+    flex: auto;
+    img{
+      height: 100%;
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    p{
+      display: inline-block;
+      width: 470px;
+      vertical-align: middle;
     }
   }
 }
