@@ -69,11 +69,13 @@
       display: inline-block;
     }
   }
+
   #toolbox, #toolbox a.column{
     border: solid #f4f4f4;
   }
   #toolbox{
     border-width: 1px 1px 0 0;
+    margin-bottom: 10px;
     a.column{
       text-align: center;
       border-width: 0 0 1px 1px;
@@ -90,4 +92,24 @@
       }
     }
   }
+
+  #ali-app{
+    padding: 0 10px;
+    h3{
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    div.columns{
+      a.column{
+        //padding: 10px 20%;
+        text-align: center;
+        img{
+          margin: 5px;
+          display: inline-block;
+          width: 36px;
+        }
+      }
+    }
+  }
+
 }
